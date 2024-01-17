@@ -9,11 +9,11 @@ Once the payment is done an invoice will be generated and an email will be sent 
 
 The website hosted at netlify.
 
-https://thesparksfoundationhub.000webhostapp.com/
+https://thesparksfondationdonations.netlify.app
 
 The Working Video is also available on LinkedIn 👍👍👍
 
-https://www.linkedin.com/posts/latha-v-3bb1161ba_task3-gripjuly21-languages-activity-6822915100186349568-bmeU
+
 
 
 Tech Stacks 👍 :-
