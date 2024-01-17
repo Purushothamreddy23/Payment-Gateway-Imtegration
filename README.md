@@ -1,5 +1,5 @@
 # Payment-Gateway-Integration
-Sparks Foundation - GRIP - Internship - task3
+Sparks Foundation - GRIP - Internship - task2
 
 A simple Responsive website where payment gateway is integrated. 
 
