@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<br lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="the sparks foundation internship certificate, donation, the sparks foundation internship, grip at the sparks foundation, grip at the sparks foundation internship, the sparks foundation grip, the sparks foundation github, the sparks foundation internship web development, the sparks foundation internship, the sparks foundation linkedin, the sparks foundation network, the sparks foundation singapore, the sparks foundation tasks, the sparks foundation web development internship, tsf, tsf at grip, grip, tsf grip, Graduate Rotational Internship Program, Payment gateway integration, task Payment gateway integration">
+<meta name="author" content="PURUSHOTHAM REDDY.T">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "icon" href ="images\logo.png" type = "image/x-icon">
+<title>Sparks Donation Hub | TSF</title>
+<link rel="stylesheet" href="STYLES/index.css">
+</head>
+<body>
+    <!--<section class="Onload" id="Onload">
+        <div class="banner-Onload" id="banner-Onload">
+            <img src="logo.png" class="banner-heading-left-logo">
+            <p class="banner-heading" style="font-family: cursive;">The Sparks Foundation</p>
+            <span class="banner-heading-right-close" id="banner-heading-right-close" onclick="closeBanner()"><i class="fa fa-close"></i></span>
+            <p class="sub-banner-heading" style="text-decoration: none;color: black;font-weight: 800;">Graduate Rotational Internship Program (GRIP)<br><span style="color: rgb(131, 182, 202); font-weight: bolder;text-decoration: none; ">January 2024</span></p>
+            <p class="topic-banner-heading" justify content centre>Payment Gateway Integration</p>      
+    </section>-->
+   
+    <!-- Javascript -->
+    <script>
+    
+    function closeBanner()
+    {
+        document.getElementById("Onload").style.display= "none";
+    }
+    </script>
+
+    <!--HEADER SECTION STARTS-->
+    <section class="page-header">
+    <div class="header">      
+        <div id="header-right" class="header-right">
+          <a href="index.html" class="header-right-links">Home</a>
+          <a href="about.html" class="header-right-links">About</a>
+          <a href="contact.html" class="header-right-links">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="header-right-icon" onclick="ResponsiveFunction()"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0);" class="header-right-close-icon" id="closeIcon" onclick="ResponsiveFunction()"><i class="fa fa-close"></i></a>
+    </div>
+</section>
+
+<!--JAVASCRIPT FOR HEADER-->
+<script>
+    function ResponsiveFunction()
+    {  
+      var nav = document.getElementById("header-right");
+      var closeIcon = document.getElementById("closeIcon");
+  
+        if (nav.className === "header-right")
+      {
+            nav.className += " Responsive-SlideDown";
+            closeIcon.style.opacity = "1";
+        }
+      
+      else
+      {
+            nav.className = "header-right";
+            closeIcon.style.opacity = "0";
+        }
+    }
+  </script>  
+<!--JS ENDS-->
+
+<section class="page-content">
+    <div class="heading">
+      <p class="heading-top" style="color: aliceblue;">Support for a <span>C A U S E</span></p>
+      <p class="heading-quote"><q>True joy is not found in amassing more for oneself, but in the boundless satisfaction of giving without expecting.</q></p>
+      <p class="heading-para" style="color: azure;">Be a Fund-Raiser</p><span class="blink-hand"><i class="fa fa-hand-o-down"style="color: azure;"></i></span>
+    </div>
+
+    <button class="donateBtn" onclick="document.location='donatePage.html'" style="background-color: azure;"><span class="donateBtnSpan" style="color: black;">Donate </span></button>
+</section>
+
+<!--<section class="page-footer">
+    <p class="footer-content">©<a href="devloper.html" style="color: white;">PURUSHOTHAM REDDY</a></p>
+</section>-->
+
+</body>
+</html>     

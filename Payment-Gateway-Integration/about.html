@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="the sparks foundation internship certificate, donation, the sparks foundation internship, grip at the sparks foundation, grip at the sparks foundation internship, the sparks foundation grip, the sparks foundation github, the sparks foundation internship web development, the sparks foundation internship, the sparks foundation linkedin, the sparks foundation network, the sparks foundation singapore, the sparks foundation tasks, the sparks foundation web development internship, tsf, tsf at grip, grip, tsf grip, Graduate Rotational Internship Program, Payment gateway integration, task Payment gateway integration">
+<meta name="author" content="PURUSHOTHAM REDDY.T">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "icon" href ="logo.png" type = "image/x-icon">
+<title>Sparks Donation Hub| About</title>
+<link rel="stylesheet" href="STYLES/style.css">
+</head>    
+<body>
+<section class="page-header">
+    <div class="header">      
+        <div class="header-left">
+            <p class="heading-donate"> Support for a Cause <span class="blink-hand"><i class="fa fa-hand-o-right"></i></span></p>
+            <button class="donateBtn" onclick="document.location='donatePage.html'" style="background-color: rgb(94, 135, 135);"><span class="donateBtnSpan" style="color:black;box-shadow: 2px;">Donate </span></button>
+        </div>
+        <div id="header-right" class="header-right">
+            <a href="index.html" class="header-right-links">Home</a>
+            <a href="about.html" class="header-right-links">About</a>
+            <a href="contact.html" class="header-right-links">Contact</a>
+        </div>
+    
+        <a href="javascript:void(0);" class="header-right-icon" onclick="ResponsiveFunction()"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0);" class="header-right-close-icon" id="closeIcon" onclick="ResponsiveFunction()"><i class="fa fa-close"></i></a>
+    
+    </div>
+</section>
+    
+<!--Script for header-->
+<script>
+function ResponsiveFunction()
+{  
+    var nav = document.getElementById("header-right");
+    var closeIcon = document.getElementById("closeIcon");
+      
+    if (nav.className === "header-right")
+    {
+        nav.className += " Responsive-SlideDown";
+        closeIcon.style.opacity = "1";
+    }    
+    else
+    {
+        nav.className = "header-right";
+        closeIcon.style.opacity = "0";
+    }  
+}
+</script>  
+<!--End of Script for header-->
+        
+<div class="slideshowContainer">
+	<img class="imageSlides" src="do1.jpg" alt="img">
+  	<img class="imageSlides" src="do2.jpg" alt="img"> 
+  	<img class="imageSlides" src="do4.jpg" alt="img">
+  
+  	<span id ="leftArrow" class="slideshowArrow">&#8249;</span>
+  	<span id ="rightArrow" class="slideshowArrow">&#8250;</span>
+  
+  	<div class="slideshowCircles">
+    		<span class="circle dot"></span>
+    		<span class="circle"></span>
+    		<span class="circle"></span>
+  	</div>
+</div>
+
+<script>
+
+var imageSlides = document.getElementsByClassName('imageSlides');
+var circles = document.getElementsByClassName('circle');
+var leftArrow = document.getElementById('leftArrow');
+var rightArrow = document.getElementById('rightArrow');
+var counter = 0;
+
+function hideImages() {
+  for (var i = 0; i < imageSlides.length; i++) {
+    imageSlides[i].classList.remove('visible');
+  }
+}
+
+function removeDots() {
+  for (var i = 0; i < imageSlides.length; i++) {
+    circles[i].classList.remove('dot');
+  }
+}
+
+function imageLoop() {
+  var currentImage = imageSlides[counter];
+  var currentDot = circles[counter];
+  currentImage.classList.add('visible');
+  removeDots();
+  currentDot.classList.add('dot');
+  counter++;
+}
+
+function arrowClick(e) {
+  var target = e.target;
+  if (target == leftArrow) {
+    clearInterval(imageSlideshowInterval);
+    hideImages();
+    removeDots();
+    if (counter == 1) {
+      counter = (imageSlides.length - 1);
+      imageLoop();
+      imageSlideshowInterval = setInterval(slideshow, 3500);
+    } else {
+      counter--;
+      counter--;
+      imageLoop();
+      imageSlideshowInterval = setInterval(slideshow, 3500);
+    }
+  } 
+  else if (target == rightArrow) {
+    clearInterval(imageSlideshowInterval);
+    hideImages();
+    removeDots();
+    if (counter == imageSlides.length) {
+      counter = 0;
+      imageLoop();
+      imageSlideshowInterval = setInterval(slideshow, 3500);
+    } else {
+      imageLoop();
+      imageSlideshowInterval = setInterval(slideshow, 3500);
+    }
+  }
+}
+
+leftArrow.addEventListener('click', arrowClick);
+rightArrow.addEventListener('click', arrowClick);
+
+function slideshow() {
+  if (counter < imageSlides.length) {
+    imageLoop();
+  } else {
+    counter = 0;
+    hideImages();
+    imageLoop();
+  }
+}
+
+setTimeout(slideshow, 1000);
+var imageSlideshowInterval = setInterval(slideshow, 3500);
+
+</script>
+
+<section class="page-content">
+    <div class="heading">
+        <p class="heading-para">About Us</p>
+    </div>
+
+  <div class="body-content-left-center">
+   <!-- <p class="body-content-left-center-heading">Mission</p>-->
+    <p class="body-content-left-center-para"><q>
+      We connect students of all financial backgrounds with experts and promote knowledge sharing to enable equal opportunity for all.
+      Sparks Donation Hub is a non-political, non-profit organisation committed to the development of rural India. Donation began in a remote village in the Chhattisgarh District.
+      It was registered under The Societies Registration Act of 1860. This hub is now working in over 100 villages.</q></p>
+    </div>
+</section>
+<h1>Achived Goals</h1>
+<ul>
+    <li style="--accent-color:#41516C">
+        <div class="date">2020</div>
+        <div class="title">Skill Development</div>
+        <div class="descr">We have formed newly,but the members who had worked hard to help the society,The people started adopting us. </div>
+    </li>
+    <li style="--accent-color:#FBCA3E">
+        <div class="date">2021</div>
+        <div class="title">Giving The Internship</div>
+        <div class="descr">We focused on our main priority goal and lots of students have approached us ,we have tried to give the oprtunities and we succeded</div>
+    </li>
+    <li style="--accent-color:#E24A68">
+        <div class="date">2022</div>
+        <div class="title">Community Outreach</div>
+        <div class="descr">We often engage in community outreach to address local needs. This can include initiatives to improve access to education, technology, and other resources.</div>
+    </li>
+    <li style="--accent-color:#1B5F8C">
+        <div class="date">2023</div>
+        <div class="title">Technology and Innovation</div>
+        <div class="descr">We often involved in projects related to emerging technologies. They may support initiatives that leverage technology for social impact, innovation, and community development.</div>
+    </li>
+    <!--<li style="--accent-color:#4CADAD">
+        <div class="date">2024</div>
+        <div class="title">Title 5</div>
+        <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
+    </li>-->
+</ul>
+
+</body>
+</html>
