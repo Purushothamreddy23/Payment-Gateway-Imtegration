@@ -25,7 +25,7 @@ Front End :-
     JS
 Gateway Used 👍 :-
 
-RazorPay
+    RazorPay
 
 
 This Project was given by THE SPARKS FOUNDATION
